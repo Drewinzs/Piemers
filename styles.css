@@ -378,6 +378,21 @@ section {
     object-fit: contain;
 }
 
+@media (min-width: 1025px) {
+    .hero-image-express {
+        max-width: 50% !important;
+        flex: 0 0 50% !important;
+    }
+
+    .hero-image-express img {
+        max-width: 100%;
+        max-height: 450px !important;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
 .hero-image-large {
     justify-content: center !important;
     max-width: 100% !important;
@@ -1913,20 +1928,31 @@ section {
     .hero-text {
         max-width: 100%;
         text-align: center;
+        margin-top: 0 !important;
+        padding-top: 0 !important;
     }
 
-    .hero-image {
-        max-width: 100%;
+    .hero-image,
+    .hero-image-express {
+        max-width: 100% !important;
+        width: 100% !important;
         margin-top: -10px;
-        max-height: 300px;
+        margin-bottom: 0 !important;
+        max-height: 300px !important;
+        height: 300px !important;
+        min-height: 300px !important;
         overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex: 0 0 300px !important;
+        padding: 0 !important;
     }
 
-    .hero-image img {
+    .hero-image img,
+    .hero-image-express img {
         max-height: 300px !important;
+        height: auto !important;
         width: auto;
         max-width: 100%;
         object-fit: contain;
@@ -2032,14 +2058,30 @@ section {
         flex-direction: column;
     }
 
-    .hero-image {
+    .hero-image,
+    .hero-image-express {
+        max-width: 100% !important;
+        width: 100% !important;
         margin-top: -10px;
-        max-height: 300px;
+        margin-bottom: 0 !important;
+        max-height: 300px !important;
+        height: 300px !important;
+        min-height: 300px !important;
         overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 300px !important;
+        padding: 0 !important;
     }
 
-    .hero-image img {
+    .hero-image img,
+    .hero-image-express img {
         max-height: 300px !important;
+        height: auto !important;
+        max-width: 100% !important;
+        width: auto;
+        object-fit: contain;
     }
 
     .hero-image-large {
