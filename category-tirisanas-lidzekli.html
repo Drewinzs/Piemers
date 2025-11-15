@@ -466,8 +466,8 @@
 
              .filters-sidebar {
                  position: fixed;
-                 top: auto;
-                 bottom: max(2cm, 20px);
+                 top: max(2cm, 20px);
+                 bottom: auto;
                  left: 50%;
                  transform: translateX(-50%) scale(0.9);
                  width: min(90vw, 400px, calc(100vw - 20px));
@@ -500,7 +500,8 @@
             @media (max-height: 700px) {
                 .filters-sidebar {
                     padding: 12px;
-                    bottom: max(2cm, 20px);
+                    top: max(2cm, 20px);
+                    max-height: calc(100vh - max(2cm, 20px) - 20px);
                 }
                 
                 .filters-sidebar .filter-group {
@@ -516,7 +517,8 @@
             @media (max-height: 600px) {
                 .filters-sidebar {
                     padding: 10px;
-                    bottom: max(2cm, 20px);
+                    top: max(2cm, 20px);
+                    max-height: calc(100vh - max(2cm, 20px) - 20px);
                 }
                 
                 .filters-sidebar .filter-group {
@@ -548,7 +550,8 @@
             @media (max-height: 500px) {
                 .filters-sidebar {
                     padding: 8px;
-                    bottom: max(2cm, 20px);
+                    top: max(2cm, 20px);
+                    max-height: calc(100vh - max(2cm, 20px) - 20px);
                 }
                 
                 .filters-sidebar .filter-group {
